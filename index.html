@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aniversário do Brunão</title>
+</head>
+<body>
+    <div class="painel">
+    </div>
+    <div class="birthdayCard">
+        <div class="cardFront">
+            <div class="front-text">
+                <h3 class="happy">FELIZ</h3>
+                <h2 class="bday">ANIVERSÁRIO</h2> 
+                <h3 class="toyou">Brunão!</h3>  
+            </div>
+            <div class="wrap-deco">
+                <div class="decorations"></div>
+                <div class="decorationsTwo"></div>
+            </div> 
+            <div class="wrap-decoTwo">
+                <div class="decorations"></div>
+                <div class="decorationsThree"></div>
+            </div>
+            <div class="plate">
+                <div class="cake"></div>
+                <div class="flame"></div>
+            </div>
+        </div>  
+        <div class="cardInside">
+            <div class="inside-text">
+                <h3 class="happy">FELIZ</h3>
+                <h2 class="bday">ANIVERSÁRIO,</h2> 
+                <h3 class="toyou">Brunão!</h3>  
+            </div>
+            <div class="wishes">
+                <p>Bruneba,</p>
+                <p>Feliz aniversário!! Tudo de bom, muita saúde e que tu continue sendo esse mano querido e bonetenho que tu é viu, aproveita seu dia ai e saiba que se precisar de QUALQUER COISA, eu sempre estou aqui.</p>
+                <p class="name">Pega na minha</p>
+            </div>
+        </div>
+    </div>
+    <button onmouseover="foge()" class="saber" id="saber">Quer saber como fiz isso?</button>
+    <script>
+        function foge() {
+    let botao = document.getElementById('saber')
+    
+    let larguraJanela = window.innerWidth
+    let alturaJanela = window.innerHeight
+
+    let maxX = larguraJanela - botao.offsetWidth
+    let maxY = alturaJanela - botao.offsetHeight
+
+    let x = Math.floor(Math.random()*maxX)
+    let y = Math.floor(Math.random()*maxY)
+
+    botao.style.left = x + "px"
+    botao.style.top = y + "px"
+}
+    </script>
+</body>
+</html>
